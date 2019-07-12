@@ -235,4 +235,4 @@ client.on('message', message => {
    blow.delete(message.author.id)
    message.channel.send('**Buying Has Been Cancled**')
  }}});
-client.login(process.env.TOKEN)
+client.login('NTk5MTUwODE0Njk4NjY4MDMy.XShAxQ.MivHifRccH6z1l9JZaxdEg0YShM');
