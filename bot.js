@@ -9,7 +9,7 @@ const prefix = "$" // تقدر تغيره
              let fouroulou = new Discord.RichEmbed()
           .setColor("#36393e")
           .setAuthor(message.author.tag,message.author.avatarURL)
-          .setDescription(`Our plans :
+          .setDescription(`Bater Host` :
                                        ** -Seler **    
                                        ** -Price:15k Probot **
                                        ** -To Buy: \`#credits <@557181389100023839> 15000 \` **
