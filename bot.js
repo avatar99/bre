@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const prefix = "." // تقدر تغيره
+const prefix = "$" // تقدر تغيره
     const blow = new Set()
     client.on('message', message => {
   var price = ''
@@ -10,25 +10,12 @@ const prefix = "." // تقدر تغيره
           .setColor("#36393e")
           .setAuthor(message.author.tag,message.author.avatarURL)
           .setDescription(`Our plans :
-                                       ** -Good S **    
-                                       ** -Price:30k Probot **
-                                       ** -To Buy: \`.Good \` **
+                                       ** -Seler **    
+                                       ** -Price:15k Probot **
+                                       ** -To Buy: \`#credits <@557181389100023839> 15000 \` **
  
-                                        ** -Exelent S **    
-                                        ** -Price:50k Probot **
-                                        ** -To Buy:\`.Exelent\` **
- 
-                                       ** -Perfect S **    
-                                       ** -Price:70k Probot **
-                                       ** -To Buy: \`.Perfect\` **
- 
-                                       ** -Great S **        
-                                       ** -Price:90k Probot **
-                                       ** -To Buy: \`.Great\` **
-                                     
- 
- 
-        For more information go to <#576447682030338058>`)  
+                                      
+        For more information go to <#598605301351972894>`)  
       .setTimestamp()
     let filter = m => m.author.id === message.author.id;
    if(message.content.startsWith(".buy")){
@@ -45,7 +32,7 @@ const prefix = "." // تقدر تغيره
      blow.add(message.author.id);
     setTimeout(() => {
         blow.delete(message.author.id);
-   }, 60000);// خلك كفو زيي ترا دا مرا ايزي ._.
+   }, 60000);// خل._.
  
      message.channel.sendEmbed(fouroulou).then(msg => {
       message.channel.awaitMessages(response => response.content === 'HightnessSeller' || 'NormalSeller' || 'BestSeller' || 'PerfectSeller' && filter,{
@@ -64,14 +51,14 @@ const prefix = "." // تقدر تغيره
           .setAuthor(message.author.tag,message.author.avatarURL)
           .setDescription(`**If you want to buy rank :**
                  ** Please transfer the amount below :**
-                 \`30k-probot\`
+                 \`15000-probot\`
                 ** To:<@527505679171321856>**
-                 **Ex: #credit <@527505679171321856> 30000**
+                 **Ex: #credit <@557181389100023839> 15000**
                   **To Exit Write Cancel**`)  
       .setTimestamp()
      
                     message.channel.sendEmbed(mrx).then(m => {
-                  message.channel.awaitMessages(res => res.content.includes(message.author.username + ', has transferred \`$28500\` to ' + user) && res.author.id === user1.id, {
+                  message.channel.awaitMessages(res => res.content.includes(message.author.username + ', has transferred \`$14250\` to ' + user) && res.author.id === user1.id, {
           max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
           time: 60000,
           errors: ['time'],
