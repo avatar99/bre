@@ -182,7 +182,7 @@ const prefix = "$" // تقدر تغيره
  
  
  
-const developers = ["599147720573190163","id"]
+const developers = ["557181389100023839","id"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
